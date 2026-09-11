@@ -109,7 +109,7 @@ The project was developed using Python and the following libraries:
 
 ## 🔬 Methodology
 
-The project follows the workflow below:
+*The project follows the workflow below:*
 
 ```text
 EEG Datasets
