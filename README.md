@@ -46,7 +46,7 @@ After removing an unnecessary column, the dataset contains:
 • **8,064 samples**
 • **32 EEG features**
 
-The features represent EEG electrode channels such as:
+*The features represent EEG electrode channels such as:*
 
 `Fp1`, `AF3`, `F3`, `F7`, `FC5`, `C3`, `T7`, `CP5`, `Cz`, `C4`, `T8`, `P4`, `P8`, `O2`, and others.
 
