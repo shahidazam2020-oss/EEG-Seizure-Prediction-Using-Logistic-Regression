@@ -245,7 +245,7 @@ PCA
 Logistic Regression
 ```
 
-The original 14 EEG measurements are reduced to five statistical features:
+*The original 14 EEG measurements are reduced to five statistical features:*
 
 • Mean
 • Standard deviation
