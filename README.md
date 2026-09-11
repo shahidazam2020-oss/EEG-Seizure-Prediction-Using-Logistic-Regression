@@ -52,7 +52,7 @@ After removing an unnecessary column, the dataset contains:
 
 ### 2. Epileptic Seizure Recognition Dataset
 
-This dataset contains EEG signal measurements with **178 signal features** and a target variable `y`.
+*This dataset contains EEG signal measurements with **178 signal features** and a target variable `y`.*
 
 The original target contains multiple classes. For this experiment, the target is converted into a binary classification problem:
 
