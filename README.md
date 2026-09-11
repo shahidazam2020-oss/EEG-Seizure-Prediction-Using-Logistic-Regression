@@ -331,7 +331,7 @@ The project also examines the effect of Logistic Regression regularization stren
 
 ### Underfitting Model
 
-A very small value of `C` is used:
+*A very small value of `C` is used:*
 
 ```python
 LogisticRegression(
