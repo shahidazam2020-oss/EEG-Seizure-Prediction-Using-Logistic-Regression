@@ -35,7 +35,7 @@
 
 ## 📊 Datasets
 
-Three EEG datasets are loaded in the notebook.
+*Three EEG datasets are loaded in the notebook.*
 
 ### 1. EEG Dataset
 
