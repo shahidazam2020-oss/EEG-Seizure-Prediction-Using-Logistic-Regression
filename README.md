@@ -186,7 +186,7 @@ X_scaled = scaler.fit_transform(X)
 
 ## Pipeline A
 
-Pipeline A focuses on preserving the original EEG feature structure.
+*Pipeline A focuses on preserving the original EEG feature structure.*
 
 ### Processing steps
 
