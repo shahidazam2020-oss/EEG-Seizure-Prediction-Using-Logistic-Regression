@@ -11,7 +11,7 @@
 `0` = Eyes closed
 `1` = Eyes open
 
-The study also loads and examines two additional EEG datasets for exploratory analysis and comparison.
+*The study also loads and examines two additional EEG datasets for exploratory analysis and comparison.*
 
 ---
 
