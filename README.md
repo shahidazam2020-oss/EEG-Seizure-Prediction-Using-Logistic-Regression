@@ -4,7 +4,7 @@
 
 *This project investigates the use of **Machine Learning for EEG signal classification**. The main objective is to study how different preprocessing strategies, feature reduction techniques, regularization methods, and class imbalance techniques affect the performance of a Logistic Regression classifier.*
 
-The project uses EEG datasets containing multi channel brain signal measurements and evaluates different approaches for binary classification.
+*The project uses EEG datasets containing multi channel brain signal measurements and evaluates different approaches for binary classification.*
 
 The experiments focus particularly on the **EEG Eye State Detection dataset**, where the target variable `eyeDetection` represents two classes:
 
