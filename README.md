@@ -265,7 +265,7 @@ The resulting representation contains:
 
 ## Logistic Regression
 
-Logistic Regression is used as the baseline classification model.
+*Logistic Regression is used as the baseline classification model.*
 
 ```python
 from sklearn.linear_model import LogisticRegression
