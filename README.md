@@ -274,7 +274,7 @@ model = LogisticRegression(max_iter=1000)
 model.fit(X_train, y_train)
 ```
 
-The dataset is divided into training and testing sets using an 80:20 split with stratification.
+*The dataset is divided into training and testing sets using an 80:20 split with stratification.*
 
 ```python
 train_test_split(
