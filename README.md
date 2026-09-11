@@ -178,7 +178,7 @@ scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 ```
 
-This transforms the features to a common scale before applying further processing.
+*This transforms the features to a common scale before applying further processing.*
 
 ---
 
