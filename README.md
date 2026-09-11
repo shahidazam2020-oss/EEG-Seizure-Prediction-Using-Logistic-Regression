@@ -587,7 +587,9 @@ It demonstrates how preprocessing decisions and model configuration can affect t
 ## Shahid Azam
 
 **MS Computer Science Student**
-Institute of Management Sciences, Peshawar, Pakistan
+**Specialization in Artificial Intelligence**
+
+*Institute of Management Sciences, Peshawar, Pakistan*
 
 ### Areas of Interest
 
