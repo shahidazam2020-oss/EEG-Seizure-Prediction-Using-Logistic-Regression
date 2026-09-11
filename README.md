@@ -218,7 +218,7 @@ Pipeline A retains:
 
 ## Pipeline B
 
-Pipeline B performs statistical feature extraction followed by PCA.
+*Pipeline B performs statistical feature extraction followed by PCA.*
 
 ### Processing steps
 
