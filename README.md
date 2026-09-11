@@ -410,7 +410,7 @@ LogisticRegression(
 
 ### 2. SMOTE
 
-Synthetic Minority Oversampling Technique is applied to the training data.
+*Synthetic Minority Oversampling Technique is applied to the training data.*
 
 ```python
 from imblearn.over_sampling import SMOTE
