@@ -582,7 +582,7 @@ It demonstrates how preprocessing decisions and model configuration can affect t
 
 ---
 
-# 👨‍💻 Author
+# 👨‍💻 About Me
 
 ## Shahid Azam
 
