@@ -35,7 +35,7 @@ The experiments focus particularly on the **EEG Eye State Detection dataset**, w
 
 ## 📊 Datasets
 
-*Three EEG datasets are loaded in the notebook.*
+**Three EEG datasets are loaded in the notebook.**
 
 ### 1. EEG Dataset
 
