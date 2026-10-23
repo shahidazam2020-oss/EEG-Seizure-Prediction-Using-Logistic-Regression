@@ -109,7 +109,7 @@ Class distribution:
 
 ## 🔬 Methodology
 
-*The project follows the workflow below:*
+**The project follows the workflow below:**
 
 ```text
 EEG Datasets
