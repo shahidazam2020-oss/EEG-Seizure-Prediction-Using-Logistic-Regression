@@ -67,7 +67,7 @@ Dataset size:
 
 ### 3. EEG Eye State Dataset
 
-The main dataset used for the classification experiments contains EEG measurements from 14 channels.
+**The main dataset used for the classification experiments contains EEG measurements from 14 channels.**
 
 Dataset size:
 
