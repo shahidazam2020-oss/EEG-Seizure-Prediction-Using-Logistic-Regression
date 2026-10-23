@@ -17,7 +17,7 @@ The experiments focus particularly on the **EEG Eye State Detection dataset**, w
 
 ## 🎯 Objectives
 
-*The main objectives of this project are:*
+**The main objectives of this project are:**
 
 1. Analyze EEG datasets using Python.
 2. Perform basic data preprocessing and cleaning.
