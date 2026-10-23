@@ -54,7 +54,7 @@ After removing an unnecessary column, the dataset contains:
 
 **This dataset contains EEG signal measurements with **178 signal features** and a target variable `y`.**
 
-The original target contains multiple classes. For this experiment, the target is converted into a binary classification problem:
+**The original target contains multiple classes. For this experiment, the target is converted into a binary classification problem:**
 
 `1` = seizure class
 `0` = non seizure classes
