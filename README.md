@@ -163,7 +163,7 @@ df2 = df2.fillna(df2.mean())
 X = X.fillna(X.mean())
 ```
 
-Unnecessary columns are also removed where required.
+**Unnecessary columns are also removed where required.**
 
 ---
 
