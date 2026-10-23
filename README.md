@@ -86,7 +86,7 @@ Class distribution:
 | 0     |   8,257 |
 | 1     |   6,723 |
 
-The dataset therefore contains a moderate class imbalance.
+**The dataset therefore contains a moderate class imbalance.**
 
 ---
 
