@@ -92,7 +92,7 @@ Class distribution:
 
 ## 🛠️ Technologies and Libraries
 
-The project was developed using Python and the following libraries:
+**The project was developed using Python and the following libraries:**
 
 | Technology       | Purpose                          |
 | ---------------- | -------------------------------- |
