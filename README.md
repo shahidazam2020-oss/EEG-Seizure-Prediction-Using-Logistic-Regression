@@ -153,7 +153,7 @@ Variance Threshold       PCA
 
 ## Missing Value Handling
 
-Missing values are handled using mean imputation.
+**Missing values are handled using mean imputation.**
 
 For example:
 
