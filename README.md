@@ -206,7 +206,7 @@ Variance Threshold
 Logistic Regression
 ```
 
-Rolling window smoothing is applied using a window size of 3.
+**Rolling window smoothing is applied using a window size of 3.**
 
 Variance Threshold is then used to remove features with very low variance.
 
