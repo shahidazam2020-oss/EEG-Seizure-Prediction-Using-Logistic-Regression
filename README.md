@@ -327,7 +327,7 @@ train_test_split(
 
 # ⚖️ Underfitting and Overfitting
 
-The project also examines the effect of Logistic Regression regularization strength.
+**The project also examines the effect of Logistic Regression regularization strength.**
 
 ### Underfitting Model
 
