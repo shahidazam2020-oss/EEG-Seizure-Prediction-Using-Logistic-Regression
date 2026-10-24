@@ -290,7 +290,7 @@ train_test_split(
 
 # 📈 Evaluation Metrics
 
-The models are evaluated using:
+**The models are evaluated using:**
 
 ### Accuracy
 
