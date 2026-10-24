@@ -367,7 +367,7 @@ Result:
 | Accuracy |    64.25% |
 | F1 Score | **0.554** |
 
-The weaker regularization allows the model to fit the training data more closely.
+**The weaker regularization allows the model to fit the training data more closely.**
 
 ---
 
