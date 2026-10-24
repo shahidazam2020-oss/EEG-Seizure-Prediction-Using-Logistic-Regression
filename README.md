@@ -319,7 +319,7 @@ train_test_split(
 
 **Pipeline A clearly performs better than Pipeline B.**
 
-Pipeline B compresses the original EEG representation into a small number of statistical features and then applies PCA. This causes information loss from the original multi channel EEG measurements.
+**Pipeline B compresses the original EEG representation into a small number of statistical features and then applies PCA. This causes information loss from the original multi channel EEG measurements.**
 
 The experiment therefore indicates that preserving the original EEG feature structure is more effective than aggressive feature compression for this dataset.
 
