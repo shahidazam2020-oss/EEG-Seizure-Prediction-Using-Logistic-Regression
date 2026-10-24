@@ -294,7 +294,7 @@ train_test_split(
 
 ### Accuracy
 
-Measures the overall proportion of correctly classified samples.
+**Measures the overall proportion of correctly classified samples.**
 
 ### F1 Score
 
