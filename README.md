@@ -255,7 +255,7 @@ Logistic Regression
 
 **PCA is then applied while retaining 95% of the variance.**
 
-The resulting representation contains:
+**The resulting representation contains:**
 
 **2 principal components**
 
