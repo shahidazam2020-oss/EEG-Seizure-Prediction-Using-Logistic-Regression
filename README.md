@@ -665,3 +665,4 @@ EEG Classification Study
 
 ---
 # 📜 License
+**This project is intended for educational, research, and experimental purposes.**
