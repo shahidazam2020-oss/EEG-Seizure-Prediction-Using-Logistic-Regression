@@ -347,7 +347,7 @@ Result:
 | Accuracy | 56.74% |
 | F1 Score |  0.238 |
 
-The strong regularization restricts the model too much, resulting in underfitting.
+**The strong regularization restricts the model too much, resulting in underfitting.**
 
 ### Overfitting Model
 
