@@ -397,7 +397,7 @@ Result:
 
 # ⚖️ Class Imbalance Experiments
 
-Three approaches are tested for handling class imbalance.
+**Three approaches are tested for handling class imbalance.**
 
 ### 1. Class Weighting
 
