@@ -302,7 +302,7 @@ train_test_split(
 
 ### PR AUC
 
-*Measures the quality of the model's precision recall performance across classification thresholds.*
+**Measures the quality of the model's precision recall performance across classification thresholds.**
 
 ---
 
