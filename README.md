@@ -578,7 +578,7 @@ The notebook contains:
 
 This project was developed as part of academic work in **Machine Learning and EEG signal analysis**.
 
-It demonstrates how preprocessing decisions and model configuration can affect the performance of machine learning systems working with high dimensional biomedical signal data.
+**It demonstrates how preprocessing decisions and model configuration can affect the performance of machine learning systems working with high dimensional biomedical signal data.**
 
 ---
 
