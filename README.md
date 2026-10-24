@@ -317,7 +317,7 @@ train_test_split(
 
 ### Observation
 
-Pipeline A clearly performs better than Pipeline B.
+**Pipeline A clearly performs better than Pipeline B.**
 
 Pipeline B compresses the original EEG representation into a small number of statistical features and then applies PCA. This causes information loss from the original multi channel EEG measurements.
 
