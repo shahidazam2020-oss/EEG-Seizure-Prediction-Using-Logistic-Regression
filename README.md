@@ -253,7 +253,7 @@ Logistic Regression
 • Minimum
 • Range
 
-PCA is then applied while retaining 95% of the variance.
+**PCA is then applied while retaining 95% of the variance.**
 
 The resulting representation contains:
 
