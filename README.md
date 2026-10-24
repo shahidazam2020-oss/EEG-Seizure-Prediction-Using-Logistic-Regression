@@ -1,4 +1,16 @@
 # 🧠 EEG Signal Classification Using Machine Learning
+<p align="center">
+
+<img src="https://img.shields.io/badge/Deep%20Learning-Facial%20Emotion%20Recognition-blueviolet?style=for-the-badge">
+<img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python">
+<img src="https://img.shields.io/badge/TensorFlow-2.x-orange?style=for-the-badge&logo=tensorflow">
+<img src="https://img.shields.io/badge/Keras-Deep%20Learning-red?style=for-the-badge&logo=keras">
+<img src="https://img.shields.io/badge/Computer%20Vision-OpenCV-green?style=for-the-badge&logo=opencv">
+<img src="https://img.shields.io/badge/Interface-Gradio-yellow?style=for-the-badge">
+
+</p>
+
+<p align="center">
 
 ## 📌 Project Overview
 
