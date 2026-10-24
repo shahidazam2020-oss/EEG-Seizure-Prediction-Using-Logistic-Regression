@@ -391,7 +391,7 @@ Result:
 
 **L1 regularization achieved the best performance among the three regularization approaches.**
 
-*L1 regularization can force some model coefficients toward zero, effectively performing feature selection. This can be useful when EEG features are correlated or contain redundant information.*
+**L1 regularization can force some model coefficients toward zero, effectively performing feature selection. This can be useful when EEG features are correlated or contain redundant information.**
 
 ---
 
