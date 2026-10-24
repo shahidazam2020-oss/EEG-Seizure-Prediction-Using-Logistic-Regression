@@ -589,7 +589,7 @@ It demonstrates how preprocessing decisions and model configuration can affect t
 **MS Computer Science Student**
 **Specialization in Artificial Intelligence**
 
-*Institute of Management Sciences, Peshawar, Pakistan*
+**Institute of Management Sciences, Peshawar, Pakistan**
 
 ### Areas of Interest
 
