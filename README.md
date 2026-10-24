@@ -298,7 +298,7 @@ train_test_split(
 
 ### F1 Score
 
-Provides a balance between precision and recall and is particularly useful when class distributions are not perfectly balanced.
+**Provides a balance between precision and recall and is particularly useful when class distributions are not perfectly balanced.**
 
 ### PR AUC
 
