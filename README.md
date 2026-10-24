@@ -668,3 +668,6 @@ EEG Classification Study
 
 **This project is intended for educational, research, and experimental purposes.**
 **If you reuse or extend this project, please provide appropriate attribution to the original work and dataset sources where applicable.**
+
+---
+# ⭐ Support
