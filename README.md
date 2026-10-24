@@ -440,7 +440,7 @@ rus = RandomUnderSampler(random_state=42)
 
 **The three imbalance handling methods produce relatively similar results.**
 
-Undersampling achieves the highest F1 score, while SMOTE achieves the highest PR AUC.
+**Undersampling achieves the highest F1 score, while SMOTE achieves the highest PR AUC.**
 
 Overall, the improvements are relatively small, suggesting that class imbalance has less influence on performance than the choice of feature representation and preprocessing strategy.
 
