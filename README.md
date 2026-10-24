@@ -331,7 +331,7 @@ train_test_split(
 
 ### Underfitting Model
 
-*A very small value of `C` is used:*
+**A very small value of `C` is used:**
 
 ```python
 LogisticRegression(
