@@ -474,7 +474,7 @@ The experimental results indicate that preprocessing and feature representation 
 
 # 📁 Repository Structure
 
-A recommended GitHub structure for this project is:
+**A recommended GitHub structure for this project is:**
 
 ```text
 EEG Signal Classification/
