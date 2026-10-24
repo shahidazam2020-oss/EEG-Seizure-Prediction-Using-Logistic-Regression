@@ -438,7 +438,7 @@ rus = RandomUnderSampler(random_state=42)
 
 ### Observation
 
-The three imbalance handling methods produce relatively similar results.
+**The three imbalance handling methods produce relatively similar results.**
 
 Undersampling achieves the highest F1 score, while SMOTE achieves the highest PR AUC.
 
