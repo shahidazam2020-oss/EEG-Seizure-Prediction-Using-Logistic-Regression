@@ -498,7 +498,7 @@ EEG Signal Classification/
 └── 📄 README.md
 ```
 
-If the original datasets are too large for GitHub, keep them outside the repository and provide their Kaggle dataset references instead.
+**If the original datasets are too large for GitHub, keep them outside the repository and provide their Kaggle dataset references instead.**
 
 ---
 
