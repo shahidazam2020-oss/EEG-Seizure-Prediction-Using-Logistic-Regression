@@ -622,6 +622,8 @@ I enjoy building complete software systems—from networking and operating syste
 • EEG Signal Analysis
 
 ---
+# 🤝 Connect With Me
+
 
 ## ⭐ Project Highlights
 
