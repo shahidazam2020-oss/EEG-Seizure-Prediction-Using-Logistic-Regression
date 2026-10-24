@@ -528,7 +528,7 @@ pip install numpy pandas matplotlib scikit-learn imbalanced-learn
 
 ## 4. Update dataset paths
 
-The original notebook uses Kaggle input paths.
+**The original notebook uses Kaggle input paths.**
 
 For example:
 
