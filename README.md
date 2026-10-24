@@ -420,7 +420,7 @@ smote = SMOTE(random_state=42)
 
 ### 3. Random Undersampling
 
-Random undersampling reduces the number of samples from the majority class.
+**Random undersampling reduces the number of samples from the majority class.**
 
 ```python
 from imblearn.under_sampling import RandomUnderSampler
