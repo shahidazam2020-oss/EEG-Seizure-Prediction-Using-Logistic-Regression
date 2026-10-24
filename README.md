@@ -546,7 +546,7 @@ For example:
 
 # 📌 Main Notebook
 
-The complete implementation, experiments, outputs, and analysis are available in:
+**The complete implementation, experiments, outputs, and analysis are available in:**
 
 **`shahid-assignment(1).ipynb`**
 
