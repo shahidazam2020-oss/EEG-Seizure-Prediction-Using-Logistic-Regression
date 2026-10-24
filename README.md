@@ -536,7 +536,7 @@ For example:
 /kaggle/input/datasets/...
 ```
 
-If running locally, update these paths to match your local `datasets` folder.
+**If running locally, update these paths to match your local `datasets` folder.**
 
 ## 5. Run the notebook
 
