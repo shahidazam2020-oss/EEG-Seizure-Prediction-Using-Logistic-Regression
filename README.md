@@ -655,4 +655,6 @@ Class Imbalance Analysis
 EEG Classification Study
 ```
 
+---
+# ⭐ Repository
 **If you find this project useful, consider giving the repository a ⭐ on GitHub.**
