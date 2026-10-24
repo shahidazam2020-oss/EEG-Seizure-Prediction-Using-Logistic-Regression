@@ -635,6 +635,8 @@ I enjoy building complete software systems—from networking and operating syste
 </a>
 
 </p>
+
+---
 ## ⭐ Project Highlights
 
 ```text
