@@ -664,3 +664,4 @@ EEG Classification Study
 </p>
 
 ---
+# 📜 License
