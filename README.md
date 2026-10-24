@@ -540,7 +540,7 @@ For example:
 
 ## 5. Run the notebook
 
-Run the notebook cells from top to bottom to reproduce the preprocessing, experiments, evaluation metrics, and analysis.
+**Run the notebook cells from top to bottom to reproduce the preprocessing, experiments, evaluation metrics, and analysis.**
 
 ---
 
