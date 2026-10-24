@@ -661,3 +661,6 @@ EEG Classification Study
 
 <p align="center">
 **⭐ Star this repository • 🍴 Fork it • 🧠 Explore the code • 🚀 Build something new**
+</p>
+
+---
