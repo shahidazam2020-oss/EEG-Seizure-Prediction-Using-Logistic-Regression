@@ -373,7 +373,7 @@ Result:
 
 # 🧩 Regularization Comparison
 
-Three regularization strategies are evaluated:
+**Three regularization strategies are evaluated:**
 
 • L1
 • L2
