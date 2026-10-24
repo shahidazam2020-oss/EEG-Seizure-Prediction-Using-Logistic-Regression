@@ -593,15 +593,23 @@ This project was developed as part of academic work in **Machine Learning and EE
 **It demonstrates how preprocessing decisions and model configuration can affect the performance of machine learning systems working with high dimensional biomedical signal data.**
 
 ---
-
 # 👨‍💻 About Me
-
 ## Shahid Azam
 
 **MS Computer Science Student**
 **Specialization in Artificial Intelligence**
 
-**Institute of Management Sciences, Peshawar, Pakistan**
+Institute of Management Sciences, Peshawar, Pakistan
+
+I enjoy building complete software systems—from networking and operating system concepts to backend architecture, machine learning, and distributed systems.
+
+- 🎓 **Degree / Field:** MS in Computer Science (Specialization in Artificial Intelligence)
+- 🏆 **Achievements:** Designed and executed 30+ machine learning and data visualization projects delivering actionable insights
+- 🎯 **Focus Areas:** Data Visualization, AI/ML, Big Data Mining
+- 📬 **Contact:** shahidazam2020@gmail.com
+- <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="18" height="18" valign="middle" /> WhatsApp: <a href="https://wa.me/+923412772594" target="_blank">Chat on WhatsApp</a>
+
+---
 
 ### Areas of Interest
 
