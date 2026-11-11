@@ -1,187 +1,172 @@
+<div align="center">
+
 # 🧠 EEG Signal Classification Using Machine Learning
-<p align="center">
 
-<img src="https://img.shields.io/badge/Deep%20Learning-Facial%20Emotion%20Recognition-blueviolet?style=for-the-badge">
-<img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python">
-<img src="https://img.shields.io/badge/TensorFlow-2.x-orange?style=for-the-badge&logo=tensorflow">
-<img src="https://img.shields.io/badge/Keras-Deep%20Learning-red?style=for-the-badge&logo=keras">
-<img src="https://img.shields.io/badge/Computer%20Vision-OpenCV-green?style=for-the-badge&logo=opencv">
-<img src="https://img.shields.io/badge/Interface-Gradio-yellow?style=for-the-badge">
+### A Comparative Study of Logistic Regression, Feature Engineering, Regularization & Class Imbalance Handling
 
+<p>
+  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Machine%20Learning-Classification-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Model-Logistic%20Regression-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Domain-EEG%20Signal%20Analysis-purple?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Research-Experimental-lightgrey?style=for-the-badge">
 </p>
 
-<p align="center">
+<p>
+  <a href="#overview">Overview</a> •
+  <a href="#datasets">Datasets</a> •
+  <a href="#methodology">Methodology</a> •
+  <a href="#experiments">Experiments</a> •
+  <a href="#results">Results</a> •
+  <a href="#installation">Installation</a>
+</p>
+
+**An experimental machine learning study exploring how preprocessing, feature representation, regularization, and class imbalance strategies influence EEG classification performance.**
+
+</div>
+
+---
 
 ## 📌 Project Overview
 
-This project investigates the use of **Machine Learning for EEG signal classification**. The main objective is to study how different preprocessing strategies, feature reduction techniques, regularization methods, and class imbalance techniques affect the performance of a Logistic Regression classifier.
+This project investigates the application of Machine Learning techniques to EEG (Electroencephalography) signal classification using **Logistic Regression**.
 
-The project uses EEG datasets containing multi channel brain signal measurements and evaluates different approaches for binary classification.
+The primary objective is to evaluate how different data preprocessing strategies, feature engineering techniques, dimensionality reduction methods, regularization approaches, and class imbalance techniques affect classification performance.
 
-The experiments focus particularly on the **EEG Eye State Detection dataset**, where the target variable `eyeDetection` represents two classes:
+The experiments examine EEG datasets and compare different feature-processing pipelines to understand their influence on predictive performance.
 
-`0` = Eyes closed
-`1` = Eyes open
-
-**The study also loads and examines two additional EEG datasets for exploratory analysis and comparison.**
+> **Research Focus:** Understanding the impact of feature representation and preprocessing decisions on machine learning classification of EEG signals.
 
 ---
 
-## 🎯 Objectives
+## 🎯 Research Objectives
 
-**The main objectives of this project are:**
-
-1. Analyze EEG datasets using Python.
-2. Perform basic data preprocessing and cleaning.
-3. Standardize EEG features.
-4. Apply denoising using rolling window smoothing.
-5. Compare two feature processing pipelines.
-6. Train Logistic Regression as the baseline classifier.
-7. Investigate underfitting and overfitting.
-8. Compare L1, L2, and Elastic Net regularization.
-9. Evaluate class imbalance handling techniques.
-10. Compare model performance using Accuracy, F1 Score, and PR AUC.
-11. Identify the preprocessing and regularization strategy that provides the best performance.
+- Analyze EEG datasets using Python.
+- Perform data cleaning and preprocessing.
+- Handle missing values and standardize EEG features.
+- Apply rolling-window smoothing for denoising.
+- Compare alternative feature-processing pipelines.
+- Implement Logistic Regression as the baseline classifier.
+- Investigate underfitting and overfitting.
+- Compare L1, L2, and Elastic Net regularization.
+- Evaluate class imbalance handling strategies.
+- Compare models using Accuracy, F1 Score, and PR AUC.
+- Identify the most effective experimental configuration.
 
 ---
 
-## 📊 Datasets
+## 🗂️ Dataset Overview
 
-**Three EEG datasets are loaded in the notebook.**
+The project examines three EEG datasets.
 
-### 1. EEG Dataset
+| Dataset | Samples | Features | Purpose |
+|---|---:|---:|---|
+| EEG Dataset | 8,064 | 32 | EEG signal exploration |
+| Epileptic Seizure Recognition | 11,500 | 178 | Seizure vs. non-seizure classification |
+| EEG Eye State | 14,980 | 14 | Eyes-open vs. eyes-closed classification |
 
-This dataset contains raw EEG features from multiple electrode channels.
+### Dataset Details
 
-After removing an unnecessary column, the dataset contains:
+**1. EEG Dataset**
 
-• **8,064 samples**
-• **32 EEG features**
+Contains measurements from multiple EEG electrode channels, including Fp1, AF3, F3, F7, FC5, C3, T7, CP5, Cz, C4, T8, P4, P8, and O2.
 
-**The features represent EEG electrode channels such as:**
+**2. Epileptic Seizure Recognition Dataset**
 
-`Fp1`, `AF3`, `F3`, `F7`, `FC5`, `C3`, `T7`, `CP5`, `Cz`, `C4`, `T8`, `P4`, `P8`, `O2`, and others.
+Contains 178 signal features and a target variable `y`.
 
-### 2. Epileptic Seizure Recognition Dataset
+For the binary classification experiment:
 
-**This dataset contains EEG signal measurements with **178 signal features** and a target variable `y`.**
+- `1` – Seizure class
+- `0` – Non-seizure classes
 
-**The original target contains multiple classes. For this experiment, the target is converted into a binary classification problem:**
+**3. EEG Eye State Dataset**
 
-`1` = seizure class
-`0` = non seizure classes
+The main classification dataset contains measurements from 14 EEG channels.
 
-Dataset size:
+Target variable: `eyeDetection`
 
-• **11,500 samples**
-• **178 signal features**
-• **1 binary target**
-
-### 3. EEG Eye State Dataset
-
-**The main dataset used for the classification experiments contains EEG measurements from 14 channels.**
-
-Dataset size:
-
-• **14,980 samples**
-• **14 EEG features**
-• **1 target variable**
-
-The target variable is:
-
-`eyeDetection`
+- `0` – Eyes closed
+- `1` – Eyes open
 
 Class distribution:
 
 | Class | Samples |
-| ----- | ------: |
-| 0     |   8,257 |
-| 1     |   6,723 |
-
-**The dataset therefore contains a moderate class imbalance.**
+|---|---:|
+| Eyes Closed (0) | 8,257 |
+| Eyes Open (1) | 6,723 |
 
 ---
 
-## 🛠️ Technologies and Libraries
+## 🛠️ Technology Stack
 
-**The project was developed using Python and the following libraries:**
-
-| Technology       | Purpose                          |
-| ---------------- | -------------------------------- |
-| Python           | Programming language             |
-| NumPy            | Numerical computation            |
-| Pandas           | Data loading and manipulation    |
-| Matplotlib       | Visualization                    |
-| Scikit Learn     | Machine Learning                 |
-| imbalanced learn | SMOTE and undersampling          |
-| Jupyter Notebook | Development environment          |
-| Kaggle           | Dataset and notebook environment |
+| Technology | Application |
+|---|---|
+| Python | Core programming language |
+| NumPy | Numerical computation |
+| Pandas | Data manipulation |
+| Matplotlib | Data visualization |
+| Scikit-learn | Machine learning and preprocessing |
+| Imbalanced-learn | SMOTE and undersampling |
+| Jupyter Notebook | Experimental development |
+| Kaggle | Dataset and notebook environment |
 
 ---
 
-## 🔬 Methodology
+## 🔬 Research Methodology
 
-**The project follows the workflow below:**
+The experimental workflow consists of data preparation, feature processing, model training, and performance evaluation.
 
 ```text
-EEG Datasets
-     │
-     ▼
-Data Loading
-     │
-     ▼
-Data Cleaning
-     │
-     ▼
-Missing Value Handling
-     │
-     ▼
-Feature Standardization
-     │
-     ├─────────────────────┐
-     │                     │
-     ▼                     ▼
-Pipeline A             Pipeline B
-Denoising              Statistical Features
-     │                     │
-     ▼                     ▼
-Variance Threshold       PCA
-     │                     │
-     └──────────┬──────────┘
-                ▼
-       Logistic Regression
-                │
-                ▼
-          Model Evaluation
-                │
-       ┌────────┼─────────┐
-       ▼        ▼         ▼
-   Accuracy    F1      PR AUC
+              EEG DATASETS
+                   │
+                   ▼
+             DATA LOADING
+                   │
+                   ▼
+             DATA CLEANING
+                   │
+                   ▼
+          MISSING VALUE HANDLING
+                   │
+                   ▼
+            STANDARDIZATION
+                   │
+          ┌────────┴────────┐
+          ▼                 ▼
+      PIPELINE A         PIPELINE B
+          │                 │
+    Rolling Smoothing  Statistical Features
+          │                 │
+    Variance Threshold      PCA
+          │                 │
+          └────────┬────────┘
+                   ▼
+          LOGISTIC REGRESSION
+                   │
+                   ▼
+             MODEL EVALUATION
+                   │
+          ┌────────┼────────┐
+          ▼        ▼        ▼
+       Accuracy    F1     PR AUC
 ```
 
 ---
 
-# 🔧 Data Preprocessing
+## ⚙️ Data Preprocessing
 
-## Missing Value Handling
+### Missing Value Handling
 
-**Missing values are handled using mean imputation.**
-
-For example:
+Mean imputation is used to handle missing numerical values.
 
 ```python
-df1 = df1.fillna(df1.mean())
-df2 = df2.fillna(df2.mean())
-X = X.fillna(X.mean())
+df = df.fillna(df.mean())
 ```
 
-**Unnecessary columns are also removed where required.**
+### Feature Standardization
 
----
-
-## Standardization
-
-**The EEG features are standardized using `StandardScaler`.**
+EEG features are standardized using `StandardScaler`.
 
 ```python
 from sklearn.preprocessing import StandardScaler
@@ -190,17 +175,17 @@ scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 ```
 
-**This transforms the features to a common scale before applying further processing.**
+### Signal Denoising
+
+Rolling-window smoothing is applied to reduce short-term fluctuations in the EEG measurements.
 
 ---
 
-# 🧪 Experimental Pipelines
+## 🧪 Experimental Pipelines
 
-## Pipeline A
+### Pipeline A – Original EEG Feature Processing
 
-**Pipeline A focuses on preserving the original EEG feature structure.**
-
-### Processing steps
+This pipeline focuses on preserving the original EEG feature representation.
 
 ```text
 Original EEG Features
@@ -218,21 +203,13 @@ Variance Threshold
 Logistic Regression
 ```
 
-**Rolling window smoothing is applied using a window size of 3.**
+- Rolling window size: 3
+- Feature selection: Variance Threshold
+- Retained features: 14
 
-**Variance Threshold is then used to remove features with very low variance.**
+### Pipeline B – Statistical Feature Extraction and PCA
 
-Pipeline A retains:
-
-**14 features**
-
----
-
-## Pipeline B
-
-**Pipeline B performs statistical feature extraction followed by PCA.**
-
-### Processing steps
+This pipeline extracts statistical information and applies dimensionality reduction.
 
 ```text
 Original EEG Features
@@ -241,55 +218,47 @@ Original EEG Features
 Statistical Feature Extraction
         │
         ▼
-Mean
-Standard Deviation
-Maximum
-Minimum
-Range
+Mean | Standard Deviation
+Maximum | Minimum | Range
         │
         ▼
 Standardization
         │
         ▼
-PCA
+PCA (95% Variance)
         │
         ▼
 Logistic Regression
 ```
 
-**The original 14 EEG measurements are reduced to five statistical features:**
+The original 14 EEG measurements are transformed into five statistical features, followed by PCA.
 
-• Mean
-• Standard deviation
-• Maximum
-• Minimum
-• Range
-
-**PCA is then applied while retaining 95% of the variance.**
-
-**The resulting representation contains:**
-
-**2 principal components**
+Final representation: **2 principal components**.
 
 ---
 
-# 🤖 Machine Learning Model
+## 🤖 Machine Learning Model
 
-## Logistic Regression
+### Logistic Regression
 
-**Logistic Regression is used as the baseline classification model.**
+Logistic Regression is used as the baseline classification algorithm.
 
 ```python
 from sklearn.linear_model import LogisticRegression
 
 model = LogisticRegression(max_iter=1000)
+
 model.fit(X_train, y_train)
 ```
 
-**The dataset is divided into training and testing sets using an 80:20 split with stratification.**
+### Training and Testing
+
+The dataset is divided using an 80:20 stratified train-test split.
 
 ```python
-train_test_split(
+from sklearn.model_selection import train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(
     X,
     y,
     test_size=0.2,
@@ -300,378 +269,234 @@ train_test_split(
 
 ---
 
-# 📈 Evaluation Metrics
+## 📊 Model Evaluation Metrics
 
-**The models are evaluated using:**
+| Metric | Purpose |
+|---|---|
+| Accuracy | Overall classification correctness |
+| F1 Score | Balance between precision and recall |
+| PR AUC | Precision-recall performance across thresholds |
 
-### Accuracy
-
-**Measures the overall proportion of correctly classified samples.**
-
-### F1 Score
-
-**Provides a balance between precision and recall and is particularly useful when class distributions are not perfectly balanced.**
-
-### PR AUC
-
-**Measures the quality of the model's precision recall performance across classification thresholds.**
+The evaluation emphasizes F1 Score and PR AUC alongside accuracy to provide a broader view of classification performance.
 
 ---
 
-# 📊 Experimental Results
+## 🧬 Experimental Investigations
 
-## Pipeline Comparison
+### 1. Pipeline Comparison
 
-| Pipeline   |   Accuracy |  F1 Score |    PR AUC |
-| ---------- | ---------: | --------: | --------: |
-| Pipeline A | **58.01%** | **0.435** | **0.572** |
-| Pipeline B |     55.31% |     0.210 |     0.489 |
+| Pipeline | Accuracy | F1 Score | PR AUC |
+|---|---:|---:|---:|
+| Pipeline A | 58.01% | 0.435 | 0.572 |
+| Pipeline B | 55.31% | 0.210 | 0.489 |
 
-### Observation
+**Finding:** Pipeline A performs better than Pipeline B in all three reported metrics.
 
-**Pipeline A clearly performs better than Pipeline B.**
+This suggests that aggressive feature compression may discard useful information from the original EEG measurements.
 
-**Pipeline B compresses the original EEG representation into a small number of statistical features and then applies PCA. This causes information loss from the original multi channel EEG measurements.**
+### 2. Underfitting and Overfitting
 
-**The experiment therefore indicates that preserving the original EEG feature structure is more effective than aggressive feature compression for this dataset.**
+The regularization parameter `C` is investigated to understand its effect on model performance.
 
----
+| Experiment | C | Accuracy | F1 Score |
+|---|---:|---:|---:|
+| Underfitting | 0.001 | 56.74% | 0.238 |
+| Overfitting experiment | 1000 | 64.25% | 0.554 |
 
-# ⚖️ Underfitting and Overfitting
+### 3. Regularization Comparison
 
-**The project also examines the effect of Logistic Regression regularization strength.**
+Three regularization approaches are evaluated.
 
-### Underfitting Model
+| Regularization | Accuracy | F1 Score |
+|---|---:|---:|
+| L1 | 62.45% | 0.518 |
+| L2 | 58.01% | 0.435 |
+| Elastic Net | 57.34% | 0.426 |
 
-**A very small value of `C` is used:**
+**Best reported approach: L1 Regularization**
 
-```python
-LogisticRegression(
-    C=0.001,
-    max_iter=1000
-)
-```
+L1 regularization can reduce less useful model coefficients toward zero, providing a form of feature selection.
 
-Result:
+### 4. Class Imbalance Handling
 
-| Metric   |  Score |
-| -------- | -----: |
-| Accuracy | 56.74% |
-| F1 Score |  0.238 |
+The following approaches are investigated:
 
-**The strong regularization restricts the model too much, resulting in underfitting.**
+- Class Weighting
+- SMOTE (Synthetic Minority Oversampling Technique)
+- Random Undersampling
 
-### Overfitting Model
+| Method | F1 Score | PR AUC |
+|---|---:|---:|
+| Class Weighting | 0.533 | 0.570 |
+| SMOTE | 0.532 | 0.571 |
+| Undersampling | 0.536 | 0.568 |
 
-A very large value of `C` is used:
+**Observations:**
 
-```python
-LogisticRegression(
-    C=1000,
-    max_iter=1000
-)
-```
-
-Result:
-
-| Metric   |     Score |
-| -------- | --------: |
-| Accuracy |    64.25% |
-| F1 Score | **0.554** |
-
-**The weaker regularization allows the model to fit the training data more closely.**
+- Random undersampling achieved the highest F1 Score.
+- SMOTE achieved the highest PR AUC.
+- All three approaches produced relatively similar results.
 
 ---
 
-# 🧩 Regularization Comparison
+## 🏆 Key Research Findings
 
-**Three regularization strategies are evaluated:**
+| Research Area | Main Observation |
+|---|---|
+| Feature Representation | Pipeline A outperformed Pipeline B |
+| Feature Compression | Aggressive compression reduced performance |
+| Regularization | L1 achieved the best reported regularization results |
+| Class Imbalance | The three tested strategies produced similar results |
+| Preprocessing | Feature-processing decisions had a substantial influence on performance |
 
-• L1
-• L2
-• Elastic Net
+### Overall Conclusion
 
-## Results
+The experiments demonstrate that preprocessing and feature representation are important factors in EEG classification.
 
-| Regularization |   Accuracy |  F1 Score |
-| -------------- | ---------: | --------: |
-| **L1**         | **62.45%** | **0.518** |
-| L2             |     58.01% |     0.435 |
-| Elastic Net    |     57.34% |     0.426 |
+Preserving the original EEG feature structure produced better results than the statistical feature extraction and PCA pipeline tested in this study.
 
-### Best Result
-
-**L1 regularization achieved the best performance among the three regularization approaches.**
-
-**L1 regularization can force some model coefficients toward zero, effectively performing feature selection. This can be useful when EEG features are correlated or contain redundant information.**
+**Important:** This is an experimental machine learning project, not a clinically validated seizure-detection or diagnostic system.
 
 ---
 
-# ⚖️ Class Imbalance Experiments
+## 📁 Repository Structure
 
-**Three approaches are tested for handling class imbalance.**
-
-### 1. Class Weighting
-
-```python
-LogisticRegression(
-    class_weight="balanced",
-    max_iter=1000
-)
-```
-
-### 2. SMOTE
-
-**Synthetic Minority Oversampling Technique is applied to the training data.**
-
-```python
-from imblearn.over_sampling import SMOTE
-
-smote = SMOTE(random_state=42)
-```
-
-### 3. Random Undersampling
-
-**Random undersampling reduces the number of samples from the majority class.**
-
-```python
-from imblearn.under_sampling import RandomUnderSampler
-
-rus = RandomUnderSampler(random_state=42)
-```
-
-## Results
-
-| Method        |  F1 Score |    PR AUC |
-| ------------- | --------: | --------: |
-| Class Weight  |     0.533 |     0.570 |
-| SMOTE         |     0.532 | **0.571** |
-| Undersampling | **0.536** |     0.568 |
-
-### Observation
-
-**The three imbalance handling methods produce relatively similar results.**
-
-**Undersampling achieves the highest F1 score, while SMOTE achieves the highest PR AUC.**
-
-**Overall, the improvements are relatively small, suggesting that class imbalance has less influence on performance than the choice of feature representation and preprocessing strategy.**
-
----
-
-# 🏆 Key Findings
-
-The experiments lead to several important observations:
-
-### 1. Preserving EEG structure matters
-
-Pipeline A performs considerably better than Pipeline B.
-
-### 2. Aggressive feature compression can reduce performance
-
-Reducing the EEG data to only a few statistical features results in information loss.
-
-### 3. L1 regularization performs well
-
-Among L1, L2, and Elastic Net, L1 produces the highest F1 score.
-
-### 4. Class imbalance has a smaller effect
-
-Class weighting, SMOTE, and undersampling produce only small differences.
-
-### 5. Preprocessing has a major effect
-
-The experimental results indicate that preprocessing and feature representation have a stronger influence on classification performance than the class imbalance strategies tested.
-
----
-
-# 📁 Repository Structure
-
-**A recommended GitHub structure for this project is:**
+The currently visible GitHub repository contains:
 
 ```text
-EEG Signal Classification/
+EEG-Seizure-Prediction-Using-Logistic-Regression/
 │
-├── 📓 shahid-assignment(1).ipynb
+├── Major Assignment.rar
 │
-├── 📂 datasets/
-│   ├── features_raw.csv
-│   ├── Epileptic Seizure Recognition.csv
-│   └── EEG-Eye-State.csv
-│
-├── 📂 results/
-│   ├── pipeline_comparison.png
-│   ├── regularization_comparison.png
-│   ├── class_imbalance_comparison.png
-│   └── learning_curve.png
-│
-├── 📂 outputs/
-│   └── model_results.csv
-│
-└── 📄 README.md
+└── README.md
 ```
 
-**If the original datasets are too large for GitHub, keep them outside the repository and provide their Kaggle dataset references instead.**
+The compressed archive contains the project materials. The README describes the main implementation notebook as:
+
+`shahid-assignment(1).ipynb`
 
 ---
 
-# 🚀 How to Run
+## 🚀 Installation and Execution
 
-## 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/your-repository-name.git
+git clone https://github.com/shahidazam2020-oss/EEG-Seizure-Prediction-Using-Logistic-Regression.git
 ```
 
-## 2. Open the notebook
-
-Open:
-
-```text
-shahid-assignment(1).ipynb
-```
-
-using Jupyter Notebook, JupyterLab, VS Code, or Kaggle.
-
-## 3. Install the required libraries
+### 2. Navigate to the Project
 
 ```bash
-pip install numpy pandas matplotlib scikit-learn imbalanced-learn
+cd EEG-Seizure-Prediction-Using-Logistic-Regression
 ```
 
-## 4. Update dataset paths
+### 3. Install Dependencies
 
-**The original notebook uses Kaggle input paths.**
-
-For example:
-
-```python
-/kaggle/input/datasets/...
+```bash
+pip install numpy pandas matplotlib scikit-learn imbalanced-learn jupyter
 ```
 
-**If running locally, update these paths to match your local `datasets` folder.**
+### 4. Extract the Project Archive
 
-## 5. Run the notebook
+Extract `Major Assignment.rar` to access the project materials.
 
-**Run the notebook cells from top to bottom to reproduce the preprocessing, experiments, evaluation metrics, and analysis.**
+### 5. Open the Notebook
 
----
+Open the main notebook using Jupyter Notebook, JupyterLab, VS Code, or Kaggle.
 
-# 📌 Main Notebook
+### 6. Configure Dataset Paths
 
-**The complete implementation, experiments, outputs, and analysis are available in:**
+If running locally, update the original Kaggle dataset paths to match your local dataset locations.
 
-**`shahid-assignment(1).ipynb`**
+### 7. Execute the Notebook
 
-The notebook contains:
-
-• Dataset loading
-• Exploratory analysis
-• Data preprocessing
-• EEG signal denoising
-• Feature selection
-• Statistical feature extraction
-• PCA
-• Logistic Regression
-• Train test evaluation
-• Learning curve analysis
-• Underfitting experiment
-• Overfitting experiment
-• L1 regularization
-• L2 regularization
-• Elastic Net
-• Class weighting
-• SMOTE
-• Random undersampling
-• Comparative analysis
+Run the notebook cells sequentially to reproduce the preprocessing, experiments, evaluation, and analysis.
 
 ---
 
-# 📚 Academic Context
+## 📚 Skills Demonstrated
 
-This project was developed as part of academic work in **Machine Learning and EEG signal analysis**.
-
-**It demonstrates how preprocessing decisions and model configuration can affect the performance of machine learning systems working with high dimensional biomedical signal data.**
+- EEG Signal Analysis
+- Machine Learning
+- Binary Classification
+- Data Cleaning and Preprocessing
+- Feature Engineering
+- Feature Selection
+- Principal Component Analysis (PCA)
+- Logistic Regression
+- Model Regularization
+- Class Imbalance Handling
+- Model Evaluation
+- Experimental Comparison
+- Python Programming
 
 ---
-# 👨‍💻 About Me
-## Shahid Azam
 
-**MS Computer Science Student**
-**Specialization in Artificial Intelligence**
+## 🔭 Future Improvements
+
+Potential directions for extending this project include:
+
+- Compare Logistic Regression with Random Forest, SVM, and Gradient Boosting.
+- Explore advanced EEG signal-processing techniques.
+- Investigate frequency-domain feature extraction.
+- Evaluate additional feature-selection methods.
+- Apply cross-validation for more robust performance estimation.
+- Explore deep learning architectures for EEG classification.
+- Include confusion matrices, ROC curves, and precision-recall curves.
+- Evaluate performance on independent datasets.
+
+---
+
+## 👨‍💻 About the Developer
+
+### Shahid Azam
+
+**MS Computer Science | Artificial Intelligence**
 
 Institute of Management Sciences, Peshawar, Pakistan
 
-I enjoy building complete software systems—from networking and operating system concepts to backend architecture, machine learning, and distributed systems.
+Interested in Artificial Intelligence, Machine Learning, Deep Learning, Natural Language Processing, and research-oriented software development.
 
-- 🎓 **Degree / Field:** MS in Computer Science (Specialization in Artificial Intelligence)
-- 🏆 **Achievements:** Designed and executed 30+ machine learning and data visualization projects delivering actionable insights
-- 🎯 **Focus Areas:** Data Visualization, AI/ML, Big Data Mining
-- 📬 **Contact:** shahidazam2020@gmail.com
-- <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="18" height="18" valign="middle" /> WhatsApp: <a href="https://wa.me/+923412772594" target="_blank">Chat on WhatsApp</a>
+### Connect With Me
+
+- 💻 GitHub: [shahidazam2020-oss](https://github.com/shahidazam2020-oss)
+- 🔗 LinkedIn: [Shahid Azam](https://www.linkedin.com/in/shahid-azam-mughal-787b58235/)
+- 📚 ResearchGate: [Shahid Azam](https://www.researchgate.net/profile/Shahid-Azam-5)
+- 🆔 ORCID: [0009-0001-6825-8863](https://orcid.org/0009-0001-6825-8863)
+- 📧 Email: shahidazam2020@gmail.com
+
+---
+
+## 🤝 Contributions
+
+Suggestions, improvements, and research discussions are welcome.
+
+If you would like to contribute:
+
+1. Fork this repository.
+2. Create a new branch.
+3. Implement your improvements.
+4. Submit a pull request.
 
 ---
 
-### Areas of Interest
+## 📜 License and Academic Use
 
-• Artificial Intelligence
-• Machine Learning
-• Deep Learning
-• Natural Language Processing
-• Data Analysis
-• Data Visualization
-• EEG Signal Analysis
+This repository is intended for educational, academic, and experimental research purposes.
+
+Please provide appropriate attribution when reusing the project or its materials. Check the repository for any applicable dataset licensing requirements.
 
 ---
-# 🤝 Connect With Me
-<p align="center">
-<a href="https://github.com/shahidazam2020-oss">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-</a>
-<a href="https://www.linkedin.com/in/shahid-azam-mughal-787b58235">
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-<a href="mailto:shahidazam2020@gmail.com">
-<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
 
-</p>
+<div align="center">
 
----
-## ⭐ Project Highlights
+### ⭐ Support This Project
 
-```text
-EEG Data Analysis
-        +
-Data Preprocessing
-        +
-Feature Engineering
-        +
-Machine Learning
-        +
-Regularization
-        +
-Class Imbalance Analysis
-        =
-EEG Classification Study
-```
+If you find this project useful, consider giving the repository a star.
 
----
-# ⭐ Repository
-**If you find this project useful for learning or experimentation, consider giving the repository a ⭐.**
+**Explore • Learn • Experiment • Contribute**
 
-<p align="center">
-**⭐ Star this repository • 🍴 Fork it • 🧠 Explore the code • 🚀 Build something new**
-</p>
+🧠 *Advancing Machine Learning Research Through EEG Signal Analysis*
 
----
-# 📜 License
-
-**This project is intended for educational, research, and experimental purposes.**
-**If you reuse or extend this project, please provide appropriate attribution to the original work and dataset sources where applicable.**
-
----
-# ⭐ Support
-
-**If you find this repository useful for learning Machine Learning, consider giving it a ⭐.**
-
-**Your feedback, suggestions, and contributions are welcome.**
+</div>
