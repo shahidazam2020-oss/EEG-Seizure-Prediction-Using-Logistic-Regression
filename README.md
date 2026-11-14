@@ -256,7 +256,7 @@ model.fit(X_train, y_train)
 
 ### Training and Testing
 
-The dataset is divided using an 80:20 stratified train-test split.
+**The dataset is divided using an 80:20 stratified train-test split.**
 
 ```python
 from sklearn.model_selection import train_test_split
