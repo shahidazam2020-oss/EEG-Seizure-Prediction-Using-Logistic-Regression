@@ -85,7 +85,7 @@ The experiments examine EEG datasets and compare different feature-processing pi
 
 **3. EEG Eye State Dataset**
 
-The main classification dataset contains measurements from 14 EEG channels.
+**The main classification dataset contains measurements from 14 EEG channels.**
 
 Target variable: `eyeDetection`
 
