@@ -188,7 +188,7 @@ X_scaled = scaler.fit_transform(X)
 
 ### Pipeline A – Original EEG Feature Processing
 
-This pipeline focuses on preserving the original EEG feature representation.
+**This pipeline focuses on preserving the original EEG feature representation.**
 
 ```text
 Original EEG Features
