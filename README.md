@@ -72,7 +72,7 @@ The experiments examine EEG datasets and compare different feature-processing pi
 
 **1. EEG Dataset**
 
-Contains measurements from multiple EEG electrode channels, including Fp1, AF3, F3, F7, FC5, C3, T7, CP5, Cz, C4, T8, P4, P8, and O2.
+**Contains measurements from multiple EEG electrode channels, including Fp1, AF3, F3, F7, FC5, C3, T7, CP5, Cz, C4, T8, P4, P8, and O2.**
 
 **2. Epileptic Seizure Recognition Dataset**
 
