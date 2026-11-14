@@ -295,7 +295,7 @@ The evaluation emphasizes F1 Score and PR AUC alongside accuracy to provide a br
 
 **Finding:** Pipeline A performs better than Pipeline B in all three reported metrics.
 
-This suggests that aggressive feature compression may discard useful information from the original EEG measurements.
+**This suggests that aggressive feature compression may discard useful information from the original EEG measurements.**
 
 ### 2. Underfitting and Overfitting
 
