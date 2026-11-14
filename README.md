@@ -234,7 +234,7 @@ PCA (95% Variance)
 Logistic Regression
 ```
 
-The original 14 EEG measurements are transformed into five statistical features, followed by PCA.
+**The original 14 EEG measurements are transformed into five statistical features, followed by PCA.**
 
 Final representation: **2 principal components**.
 
