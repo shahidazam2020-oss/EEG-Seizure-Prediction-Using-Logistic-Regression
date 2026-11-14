@@ -92,7 +92,7 @@ Target variable: `eyeDetection`
 - `0` – Eyes closed
 - `1` – Eyes open
 
-Class distribution:
+**Class distribution:**
 
 | Class | Samples |
 |---|---:|
