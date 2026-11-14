@@ -180,7 +180,7 @@ X_scaled = scaler.fit_transform(X)
 
 ### Signal Denoising
 
-Rolling-window smoothing is applied to reduce short-term fluctuations in the EEG measurements.
+**Rolling-window smoothing is applied to reduce short-term fluctuations in the EEG measurements.**
 
 ---
 
