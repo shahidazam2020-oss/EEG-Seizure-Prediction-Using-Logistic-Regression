@@ -23,6 +23,8 @@
 
 **An experimental machine learning study exploring how preprocessing, feature representation, regularization, and class imbalance strategies influence EEG classification performance.**
 
+[![GitHub Stars](https://img.shields.io/github/stars/shahidazam2020-oss/Data-Visualization?style=social)](https://github.com/shahidazam2020-oss/Data-Visualization/stargazers)
+
 </div>
 
 ---
