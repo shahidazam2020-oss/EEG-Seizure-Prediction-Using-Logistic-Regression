@@ -212,7 +212,7 @@ Logistic Regression
 
 ### Pipeline B – Statistical Feature Extraction and PCA
 
-This pipeline extracts statistical information and applies dimensionality reduction.
+**This pipeline extracts statistical information and applies dimensionality reduction.**
 
 ```text
 Original EEG Features
