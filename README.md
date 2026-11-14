@@ -60,7 +60,7 @@ The experiments examine EEG datasets and compare different feature-processing pi
 
 ## 🗂️ Dataset Overview
 
-The project examines three EEG datasets.
+**The project examines three EEG datasets.**
 
 | Dataset | Samples | Features | Purpose |
 |---|---:|---:|---|
