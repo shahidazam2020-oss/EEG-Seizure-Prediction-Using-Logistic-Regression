@@ -244,7 +244,7 @@ Final representation: **2 principal components**.
 
 ### Logistic Regression
 
-Logistic Regression is used as the baseline classification algorithm.
+**Logistic Regression is used as the baseline classification algorithm.**
 
 ```python
 from sklearn.linear_model import LogisticRegression
