@@ -118,7 +118,7 @@ Class distribution:
 
 ## 🔬 Research Methodology
 
-The experimental workflow consists of data preparation, feature processing, model training, and performance evaluation.
+**The experimental workflow consists of data preparation, feature processing, model training, and performance evaluation.**
 
 ```text
               EEG DATASETS
