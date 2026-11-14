@@ -76,7 +76,7 @@ The experiments examine EEG datasets and compare different feature-processing pi
 
 **2. Epileptic Seizure Recognition Dataset**
 
-Contains 178 signal features and a target variable `y`.
+**Contains 178 signal features and a target variable `y`.**
 
 For the binary classification experiment:
 
