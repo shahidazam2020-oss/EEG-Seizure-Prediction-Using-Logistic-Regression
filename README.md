@@ -161,7 +161,7 @@ The experimental workflow consists of data preparation, feature processing, mode
 
 ### Missing Value Handling
 
-Mean imputation is used to handle missing numerical values.
+**Mean imputation is used to handle missing numerical values.**
 
 ```python
 df = df.fillna(df.mean())
