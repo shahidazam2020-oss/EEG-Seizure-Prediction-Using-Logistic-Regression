@@ -78,7 +78,7 @@ The experiments examine EEG datasets and compare different feature-processing pi
 
 **Contains 178 signal features and a target variable `y`.**
 
-For the binary classification experiment:
+**For the binary classification experiment:**
 
 - `1` – Seizure class
 - `0` – Non-seizure classes
