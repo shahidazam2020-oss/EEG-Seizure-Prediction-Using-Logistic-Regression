@@ -1,5 +1,16 @@
 <div align="center">
 
+  <a href="https://github.com/shahidazam2020-oss/EEG-Seizure-Prediction-Using-Logistic-Regression/stargazers">
+    <img src="https://img.shields.io/github/stars/shahidazam2020-oss/EEG-Seizure-Prediction-Using-Logistic-Regression?style=social" alt="GitHub Stars">
+  </a>
+  <a href="https://github.com/shahidazam2020-oss/EEG-Seizure-Prediction-Using-Logistic-Regression/forks">
+    <img src="https://img.shields.io/github/forks/shahidazam2020-oss/EEG-Seizure-Prediction-Using-Logistic-Regression?style=social" alt="GitHub Forks">
+  </a>
+  <a href="https://github.com/shahidazam2020-oss/EEG-Seizure-Prediction-Using-Logistic-Regression/commits">
+    <img src="https://img.shields.io/github/last-commit/shahidazam2020-oss/EEG-Seizure-Prediction-Using-Logistic-Regression?style=flat-square" alt="GitHub Last Commit">
+  </a>
+
+  ---
 # 🧠 EEG Signal Classification Using Machine Learning
 
 ### A Comparative Study of Logistic Regression, Feature Engineering, Regularization & Class Imbalance Handling
@@ -23,16 +34,6 @@
 
 **An experimental machine learning study exploring how preprocessing, feature representation, regularization, and class imbalance strategies influence EEG classification performance.**
 
-  <a href="https://github.com/shahidazam2020-oss/EEG-Seizure-Prediction-Using-Logistic-Regression/stargazers">
-    <img src="https://img.shields.io/github/stars/shahidazam2020-oss/EEG-Seizure-Prediction-Using-Logistic-Regression?style=social" alt="GitHub Stars">
-  </a>
-  <a href="https://github.com/shahidazam2020-oss/EEG-Seizure-Prediction-Using-Logistic-Regression/forks">
-    <img src="https://img.shields.io/github/forks/shahidazam2020-oss/EEG-Seizure-Prediction-Using-Logistic-Regression?style=social" alt="GitHub Forks">
-  </a>
-  <a href="https://github.com/shahidazam2020-oss/EEG-Seizure-Prediction-Using-Logistic-Regression/commits">
-    <img src="https://img.shields.io/github/last-commit/shahidazam2020-oss/EEG-Seizure-Prediction-Using-Logistic-Regression?style=flat-square" alt="GitHub Last Commit">
-  </a>
-</p>
 
 </div>
 
