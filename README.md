@@ -478,18 +478,6 @@ Interested in Artificial Intelligence, Machine Learning, Deep Learning, Natural 
 - 🆔 ORCID: [0009-0001-6825-8863](https://orcid.org/0009-0001-6825-8863)
 - 📧 Email: shahidazam2020@gmail.com
 
----
-
-## 🤝 Contributions
-
-Suggestions, improvements, and research discussions are welcome.
-
-If you would like to contribute:
-
-1. Fork this repository.
-2. Create a new branch.
-3. Implement your improvements.
-4. Submit a pull request.
 
 ---
 
