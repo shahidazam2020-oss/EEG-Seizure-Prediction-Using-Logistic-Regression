@@ -507,3 +507,5 @@ If you find this project useful, consider giving the repository a star.
 If this project helps you understand machine learning for healthcare prediction, consider:
 
 ⭐ **Starring the repository**
+
+🍴 **Forking the project**
